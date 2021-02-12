@@ -170,6 +170,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   height: 58.8vh;
   color: #fff;
   width: 100%;
@@ -298,9 +299,9 @@ input#search:focus {
   }
   #join-group {
     display: inline-block !important;
-    margin-top: -27px !important;
-    margin-left: 16.7rem;
     position: absolute;
+    right: 26px;
+    top: 20px;
     background: inherit;
     border-color: #fff;
   }
@@ -345,5 +346,50 @@ input#search:focus {
   }
   .modal-bottom2 {
     transform: translate3d(0, 36vh, 0);
+  }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+  .card {
+    width: 100% !important;
+  }
+  #location {
+    display: none !important;
+  }
+  #nav2 {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .card {
+    width: 100% !important;
+  }
+  #location {
+    display: none !important;
+  }
+  #nav2 {
+    display: none !important;
+  }
+  #nav {
+    display: none !important;
+  }
+  .arrow {
+    display: block !important;
+    margin-top: -2rem;
+  }
+  #join-group {
+    display: inline-block !important;
+    position: absolute;
+    right: 26px;
+    top: 20px;
+    background: inherit;
+    border-color: #fff;
+  }
+  .pencil-img {
+    display: block !important;
+    position: fixed !important;
+    z-index: 4;
+    right: 18px;
+    bottom: 18px;
   }
 }
